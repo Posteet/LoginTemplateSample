@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LoginTemplateSample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +17,85 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csj-kH-f6j">
+                                <rect key="frame" x="200" y="501" width="200" height="30"/>
+                                <state key="normal" title="네이버 로그인"/>
+                                <connections>
+                                    <action selector="loginViaNaver:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lgc-5P-Hfl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DvF-eo-gn9">
+                                <rect key="frame" x="200" y="463" width="200" height="30"/>
+                                <state key="normal" title="페이스북 로그인"/>
+                                <connections>
+                                    <action selector="loginViaFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F7J-pS-qVD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKe-82-ZHz">
+                                <rect key="frame" x="200" y="387" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Frs-2B-fO1"/>
+                                </constraints>
+                                <state key="normal" title="구글 로그인"/>
+                                <connections>
+                                    <action selector="loginViaGoogle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kGU-oc-KXl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seB-SA-gUw">
+                                <rect key="frame" x="200" y="425" width="200" height="30"/>
+                                <state key="normal" title="인스타그램 로그인"/>
+                                <connections>
+                                    <action selector="loginViaInstagram:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oGd-EB-TGO"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="43b-Z7-ZMn">
+                                <rect key="frame" x="20" y="25" width="560" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="iry-tQ-avX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="iry-tQ-avX"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTD-3n-ss5">
+                                <rect key="frame" x="200" y="539" width="200" height="30"/>
+                                <state key="normal" title="카카오 로그인"/>
+                                <connections>
+                                    <action selector="loginViaKakao:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4li-NX-NfW"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="seB-SA-gUw" firstAttribute="leading" secondItem="DvF-eo-gn9" secondAttribute="leading" id="4O1-JF-Pdr"/>
+                            <constraint firstItem="seB-SA-gUw" firstAttribute="top" secondItem="JKe-82-ZHz" secondAttribute="bottom" constant="8" symbolic="YES" id="4tg-yR-e4R"/>
+                            <constraint firstItem="43b-Z7-ZMn" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="9cg-wT-s2D"/>
+                            <constraint firstItem="DvF-eo-gn9" firstAttribute="leading" secondItem="csj-kH-f6j" secondAttribute="leading" id="AJW-3V-Xtc"/>
+                            <constraint firstItem="43b-Z7-ZMn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="5" id="B87-eK-4Vk"/>
+                            <constraint firstItem="csj-kH-f6j" firstAttribute="leading" secondItem="bTD-3n-ss5" secondAttribute="leading" id="BBn-jB-SeE"/>
+                            <constraint firstItem="seB-SA-gUw" firstAttribute="leading" secondItem="JKe-82-ZHz" secondAttribute="leading" id="GIe-tP-e0Q"/>
+                            <constraint firstItem="DvF-eo-gn9" firstAttribute="trailing" secondItem="csj-kH-f6j" secondAttribute="trailing" id="bKl-19-hSH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bTD-3n-ss5" secondAttribute="bottom" constant="31" id="bW9-OQ-qKr"/>
+                            <constraint firstItem="JKe-82-ZHz" firstAttribute="centerX" secondItem="43b-Z7-ZMn" secondAttribute="centerX" id="cHA-GF-Sb9"/>
+                            <constraint firstItem="csj-kH-f6j" firstAttribute="top" secondItem="DvF-eo-gn9" secondAttribute="bottom" constant="8" symbolic="YES" id="lCu-gE-dk3"/>
+                            <constraint firstItem="JKe-82-ZHz" firstAttribute="top" secondItem="43b-Z7-ZMn" secondAttribute="bottom" constant="62" id="lak-P8-igw"/>
+                            <constraint firstItem="JKe-82-ZHz" firstAttribute="trailing" secondItem="seB-SA-gUw" secondAttribute="trailing" id="nt9-LJ-Vmd"/>
+                            <constraint firstItem="DvF-eo-gn9" firstAttribute="top" secondItem="seB-SA-gUw" secondAttribute="bottom" constant="8" symbolic="YES" id="oFP-5X-vFF"/>
+                            <constraint firstItem="bTD-3n-ss5" firstAttribute="trailing" secondItem="csj-kH-f6j" secondAttribute="trailing" id="oPc-K3-ite"/>
+                            <constraint firstItem="bTD-3n-ss5" firstAttribute="top" secondItem="csj-kH-f6j" secondAttribute="bottom" constant="8" symbolic="YES" id="sgZ-wX-LDZ"/>
+                            <constraint firstItem="43b-Z7-ZMn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="x1i-cM-GZi"/>
+                            <constraint firstItem="seB-SA-gUw" firstAttribute="trailing" secondItem="DvF-eo-gn9" secondAttribute="trailing" id="xs7-Zf-tpe"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginStatusView" destination="43b-Z7-ZMn" id="uIP-2H-Lti"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

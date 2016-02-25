@@ -7,12 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94824676D3D5DF251C8D212A /* Pods_LoginTemplateSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C68AF643F9A74DC83E30114 /* Pods_LoginTemplateSampleTests.framework */; };
+		B384B7C6E01CC2F925203FD6 /* Pods_LoginTemplateSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66698827E39D3DBF3EFAA2E9 /* Pods_LoginTemplateSample.framework */; };
 		E94B083E1C7EC0F5003730F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94B083D1C7EC0F5003730F5 /* AppDelegate.swift */; };
 		E94B08401C7EC0F5003730F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94B083F1C7EC0F5003730F5 /* ViewController.swift */; };
 		E94B08431C7EC0F5003730F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E94B08411C7EC0F5003730F5 /* Main.storyboard */; };
 		E94B08451C7EC0F5003730F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E94B08441C7EC0F5003730F5 /* Assets.xcassets */; };
 		E94B08481C7EC0F5003730F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E94B08461C7EC0F5003730F5 /* LaunchScreen.storyboard */; };
 		E94B08531C7EC0F5003730F5 /* LoginTemplateSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94B08521C7EC0F5003730F5 /* LoginTemplateSampleTests.swift */; };
+		E94B08681C7EC1D7003730F5 /* FacebookLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94B085F1C7EC1D7003730F5 /* FacebookLogin.swift */; };
+		E94B08691C7EC1D7003730F5 /* GoogleLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94B08601C7EC1D7003730F5 /* GoogleLogin.swift */; };
+		E94B086A1C7EC1D7003730F5 /* InstagramLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94B08611C7EC1D7003730F5 /* InstagramLogin.swift */; };
+		E94B086B1C7EC1D7003730F5 /* KakaoLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94B08621C7EC1D7003730F5 /* KakaoLogin.swift */; };
+		E94B086C1C7EC1D7003730F5 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94B08631C7EC1D7003730F5 /* Login.swift */; };
+		E94B086D1C7EC1D7003730F5 /* LoginFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94B08641C7EC1D7003730F5 /* LoginFactory.swift */; };
+		E94B086E1C7EC1D7003730F5 /* NaverLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94B08651C7EC1D7003730F5 /* NaverLogin.swift */; };
+		E94B086F1C7EC1D7003730F5 /* NoLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94B08661C7EC1D7003730F5 /* NoLogin.swift */; };
+		E94B08701C7EC1D7003730F5 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94B08671C7EC1D7003730F5 /* UserInfo.swift */; };
+		E94B08721C7EC1DE003730F5 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94B08711C7EC1DE003730F5 /* LoginController.swift */; };
+		E94B08761C7EC298003730F5 /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E94B08751C7EC298003730F5 /* GoogleSignIn.bundle */; };
+		E94B08781C7EC2AB003730F5 /* NaverAuth.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E94B08771C7EC2AB003730F5 /* NaverAuth.bundle */; };
+		E94B087C1C7EC784003730F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E94B087B1C7EC784003730F5 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C68AF643F9A74DC83E30114 /* Pods_LoginTemplateSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginTemplateSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66698827E39D3DBF3EFAA2E9 /* Pods_LoginTemplateSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginTemplateSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		738B9AE98F1A5EB0BEB4A708 /* Pods-LoginTemplateSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginTemplateSampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoginTemplateSampleTests/Pods-LoginTemplateSampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		C2EE959687F5B109C3144D90 /* Pods-LoginTemplateSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginTemplateSampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoginTemplateSampleTests/Pods-LoginTemplateSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C9357C7501B09E85A302ACCB /* Pods-LoginTemplateSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginTemplateSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoginTemplateSample/Pods-LoginTemplateSample.debug.xcconfig"; sourceTree = "<group>"; };
 		E94B083A1C7EC0F5003730F5 /* LoginTemplateSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginTemplateSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E94B083D1C7EC0F5003730F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E94B083F1C7EC0F5003730F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +56,21 @@
 		E94B084E1C7EC0F5003730F5 /* LoginTemplateSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginTemplateSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E94B08521C7EC0F5003730F5 /* LoginTemplateSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTemplateSampleTests.swift; sourceTree = "<group>"; };
 		E94B08541C7EC0F5003730F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E94B085D1C7EC18E003730F5 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		E94B085F1C7EC1D7003730F5 /* FacebookLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FacebookLogin.swift; path = LoginTemplate/FacebookLogin.swift; sourceTree = "<group>"; };
+		E94B08601C7EC1D7003730F5 /* GoogleLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleLogin.swift; path = LoginTemplate/GoogleLogin.swift; sourceTree = "<group>"; };
+		E94B08611C7EC1D7003730F5 /* InstagramLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InstagramLogin.swift; path = LoginTemplate/InstagramLogin.swift; sourceTree = "<group>"; };
+		E94B08621C7EC1D7003730F5 /* KakaoLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KakaoLogin.swift; path = LoginTemplate/KakaoLogin.swift; sourceTree = "<group>"; };
+		E94B08631C7EC1D7003730F5 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Login.swift; path = LoginTemplate/Login.swift; sourceTree = "<group>"; };
+		E94B08641C7EC1D7003730F5 /* LoginFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginFactory.swift; path = LoginTemplate/LoginFactory.swift; sourceTree = "<group>"; };
+		E94B08651C7EC1D7003730F5 /* NaverLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NaverLogin.swift; path = LoginTemplate/NaverLogin.swift; sourceTree = "<group>"; };
+		E94B08661C7EC1D7003730F5 /* NoLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoLogin.swift; path = LoginTemplate/NoLogin.swift; sourceTree = "<group>"; };
+		E94B08671C7EC1D7003730F5 /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserInfo.swift; path = LoginTemplate/UserInfo.swift; sourceTree = "<group>"; };
+		E94B08711C7EC1DE003730F5 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		E94B08751C7EC298003730F5 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleSignIn.bundle; path = Pods/GoogleSignIn/Resources/GoogleSignIn.bundle; sourceTree = "<group>"; };
+		E94B08771C7EC2AB003730F5 /* NaverAuth.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = NaverAuth.bundle; path = Pods/NaverLoginSDK/NaverAuth.bundle; sourceTree = "<group>"; };
+		E94B087B1C7EC784003730F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "LoginTemplateSample/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F0652854F244C4D80189B4F6 /* Pods-LoginTemplateSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginTemplateSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoginTemplateSample/Pods-LoginTemplateSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B384B7C6E01CC2F925203FD6 /* Pods_LoginTemplateSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +86,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94824676D3D5DF251C8D212A /* Pods_LoginTemplateSampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DCF1748F3835EBCF757E60EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66698827E39D3DBF3EFAA2E9 /* Pods_LoginTemplateSample.framework */,
+				3C68AF643F9A74DC83E30114 /* Pods_LoginTemplateSampleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E087B874F0E2DD31B04C95FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9357C7501B09E85A302ACCB /* Pods-LoginTemplateSample.debug.xcconfig */,
+				F0652854F244C4D80189B4F6 /* Pods-LoginTemplateSample.release.xcconfig */,
+				C2EE959687F5B109C3144D90 /* Pods-LoginTemplateSampleTests.debug.xcconfig */,
+				738B9AE98F1A5EB0BEB4A708 /* Pods-LoginTemplateSampleTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E94B08311C7EC0F5003730F5 = {
 			isa = PBXGroup;
 			children = (
+				E94B087B1C7EC784003730F5 /* GoogleService-Info.plist */,
+				E94B08771C7EC2AB003730F5 /* NaverAuth.bundle */,
+				E94B08751C7EC298003730F5 /* GoogleSignIn.bundle */,
 				E94B083C1C7EC0F5003730F5 /* LoginTemplateSample */,
 				E94B08511C7EC0F5003730F5 /* LoginTemplateSampleTests */,
 				E94B083B1C7EC0F5003730F5 /* Products */,
+				E087B874F0E2DD31B04C95FC /* Pods */,
+				DCF1748F3835EBCF757E60EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,10 +139,13 @@
 		E94B083C1C7EC0F5003730F5 /* LoginTemplateSample */ = {
 			isa = PBXGroup;
 			children = (
+				E94B085E1C7EC1CB003730F5 /* LoginTemplate */,
 				E94B083D1C7EC0F5003730F5 /* AppDelegate.swift */,
 				E94B083F1C7EC0F5003730F5 /* ViewController.swift */,
+				E94B08711C7EC1DE003730F5 /* LoginController.swift */,
 				E94B08411C7EC0F5003730F5 /* Main.storyboard */,
 				E94B08441C7EC0F5003730F5 /* Assets.xcassets */,
+				E94B085D1C7EC18E003730F5 /* Bridging-Header.h */,
 				E94B08461C7EC0F5003730F5 /* LaunchScreen.storyboard */,
 				E94B08491C7EC0F5003730F5 /* Info.plist */,
 			);
@@ -96,6 +161,22 @@
 			path = LoginTemplateSampleTests;
 			sourceTree = "<group>";
 		};
+		E94B085E1C7EC1CB003730F5 /* LoginTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				E94B085F1C7EC1D7003730F5 /* FacebookLogin.swift */,
+				E94B08601C7EC1D7003730F5 /* GoogleLogin.swift */,
+				E94B08611C7EC1D7003730F5 /* InstagramLogin.swift */,
+				E94B08621C7EC1D7003730F5 /* KakaoLogin.swift */,
+				E94B08631C7EC1D7003730F5 /* Login.swift */,
+				E94B08641C7EC1D7003730F5 /* LoginFactory.swift */,
+				E94B08651C7EC1D7003730F5 /* NaverLogin.swift */,
+				E94B08661C7EC1D7003730F5 /* NoLogin.swift */,
+				E94B08671C7EC1D7003730F5 /* UserInfo.swift */,
+			);
+			name = LoginTemplate;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +184,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E94B08571C7EC0F5003730F5 /* Build configuration list for PBXNativeTarget "LoginTemplateSample" */;
 			buildPhases = (
+				AC6904868AD391AED132997D /* Check Pods Manifest.lock */,
 				E94B08361C7EC0F5003730F5 /* Sources */,
 				E94B08371C7EC0F5003730F5 /* Frameworks */,
 				E94B08381C7EC0F5003730F5 /* Resources */,
+				A38B59B46ADF524AA8543C34 /* Embed Pods Frameworks */,
+				48218A7DC743C54AE24E7230 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E94B085A1C7EC0F5003730F5 /* Build configuration list for PBXNativeTarget "LoginTemplateSampleTests" */;
 			buildPhases = (
+				2E27DF20424CEF1AE6580751 /* Check Pods Manifest.lock */,
 				E94B084A1C7EC0F5003730F5 /* Sources */,
 				E94B084B1C7EC0F5003730F5 /* Frameworks */,
 				E94B084C1C7EC0F5003730F5 /* Resources */,
+				F404B0341520C2CD64F50B33 /* Embed Pods Frameworks */,
+				1D7A29654EEC8EB2823A42B4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,6 +264,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E94B087C1C7EC784003730F5 /* GoogleService-Info.plist in Resources */,
+				E94B08781C7EC2AB003730F5 /* NaverAuth.bundle in Resources */,
+				E94B08761C7EC298003730F5 /* GoogleSignIn.bundle in Resources */,
 				E94B08481C7EC0F5003730F5 /* LaunchScreen.storyboard in Resources */,
 				E94B08451C7EC0F5003730F5 /* Assets.xcassets in Resources */,
 				E94B08431C7EC0F5003730F5 /* Main.storyboard in Resources */,
@@ -192,12 +282,115 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D7A29654EEC8EB2823A42B4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LoginTemplateSampleTests/Pods-LoginTemplateSampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E27DF20424CEF1AE6580751 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		48218A7DC743C54AE24E7230 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LoginTemplateSample/Pods-LoginTemplateSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A38B59B46ADF524AA8543C34 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LoginTemplateSample/Pods-LoginTemplateSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC6904868AD391AED132997D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F404B0341520C2CD64F50B33 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LoginTemplateSampleTests/Pods-LoginTemplateSampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E94B08361C7EC0F5003730F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E94B086C1C7EC1D7003730F5 /* Login.swift in Sources */,
+				E94B08721C7EC1DE003730F5 /* LoginController.swift in Sources */,
 				E94B08401C7EC0F5003730F5 /* ViewController.swift in Sources */,
+				E94B086F1C7EC1D7003730F5 /* NoLogin.swift in Sources */,
+				E94B086B1C7EC1D7003730F5 /* KakaoLogin.swift in Sources */,
+				E94B086A1C7EC1D7003730F5 /* InstagramLogin.swift in Sources */,
+				E94B08681C7EC1D7003730F5 /* FacebookLogin.swift in Sources */,
+				E94B08691C7EC1D7003730F5 /* GoogleLogin.swift in Sources */,
+				E94B086E1C7EC1D7003730F5 /* NaverLogin.swift in Sources */,
+				E94B086D1C7EC1D7003730F5 /* LoginFactory.swift in Sources */,
+				E94B08701C7EC1D7003730F5 /* UserInfo.swift in Sources */,
 				E94B083E1C7EC0F5003730F5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,28 +518,33 @@
 		};
 		E94B08581C7EC0F5003730F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9357C7501B09E85A302ACCB /* Pods-LoginTemplateSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LoginTemplateSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.posteet.auth.LoginTemplateSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LoginTemplateSample/Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		E94B08591C7EC0F5003730F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0652854F244C4D80189B4F6 /* Pods-LoginTemplateSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LoginTemplateSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.posteet.auth.LoginTemplateSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LoginTemplateSample/Bridging-Header.h";
 			};
 			name = Release;
 		};
 		E94B085B1C7EC0F5003730F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2EE959687F5B109C3144D90 /* Pods-LoginTemplateSampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = LoginTemplateSampleTests/Info.plist;
@@ -359,6 +557,7 @@
 		};
 		E94B085C1C7EC0F5003730F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 738B9AE98F1A5EB0BEB4A708 /* Pods-LoginTemplateSampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = LoginTemplateSampleTests/Info.plist;
@@ -388,6 +587,7 @@
 				E94B08591C7EC0F5003730F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E94B085A1C7EC0F5003730F5 /* Build configuration list for PBXNativeTarget "LoginTemplateSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +596,7 @@
 				E94B085C1C7EC0F5003730F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
