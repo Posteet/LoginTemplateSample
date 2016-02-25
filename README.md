@@ -11,7 +11,7 @@ LoginTemplateSample 은 아래 앱 로그인 리스트의 각 앱을 통해서 �
   - 구글
 <br>
 
-### 사용방법
+### 샘플 실행방법
   - pod install
   - open LoginTemplateSample.xcworkspace
   - Cmd + R (Run)
