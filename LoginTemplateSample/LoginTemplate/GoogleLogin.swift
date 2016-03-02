@@ -51,9 +51,6 @@ public class GoogleLogin: NSObject, Login, GIDSignInDelegate, GIDSignInUIDelegat
         }
     }
     
-    public func handleApplication(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) {
-    }
-    
     public func handleApplication(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
         return GIDSignIn.sharedInstance().handleURL(url, sourceApplication: sourceApplication, annotation: annotation)
     }

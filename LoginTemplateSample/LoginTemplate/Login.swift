@@ -18,7 +18,6 @@ public protocol Login {
     func login(parentViewController: UIViewController!, completion: LoginCompletion!)
     func logout(completion: LogoutCompletion!)
     
-    func handleApplication(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?)
     func handleApplication(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool
     func handleDidEnterBackground()
     func handleDidBecomeActive()

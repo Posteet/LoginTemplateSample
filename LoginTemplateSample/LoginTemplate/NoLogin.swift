@@ -33,9 +33,6 @@ public class NoLogin: Login {
         }
     }
     
-    public func handleApplication(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) {
-    }
-    
     public func handleApplication(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
         return false
     }

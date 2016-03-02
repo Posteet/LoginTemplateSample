@@ -55,9 +55,6 @@ public class NaverLogin: NSObject, Login, NaverThirdPartyLoginConnectionDelegate
         }
     }
     
-    public func handleApplication(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) {
-    }
-    
     public func handleApplication(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
         if url.scheme == loginConnection.serviceUrlScheme {
             if url.host == kCheckResultPage {
