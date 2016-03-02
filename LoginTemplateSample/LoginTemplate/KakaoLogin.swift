@@ -10,7 +10,11 @@ import Foundation
 
 public class KakaoLogin: Login {
     
-    internal init() {
+    private let authTypes: [KOAuthType]!
+    
+    internal init(authTypes: [KOAuthType]! = nil) {
+        self.authTypes = authTypes;
+        
         NSNotificationCenter.defaultCenter().addObserver(self,
             selector: "kakaoSessionDidChangeWithNotification:",
             name: KOSessionDidChangeNotification,
@@ -30,7 +34,17 @@ public class KakaoLogin: Login {
     }
     
     public func login(parentViewController: UIViewController!, completion: LoginCompletion!) {
-        KOSession.sharedSession().openWithCompletionHandler { (error) -> Void in
+        var objAuthTypes: [AnyObject]! = nil
+        
+        if let authTypes = authTypes {
+            objAuthTypes = [AnyObject](arrayLiteral: authTypes.count)
+            
+            for type in authTypes {
+                objAuthTypes.append(type.rawValue)
+            }
+        }
+        
+        KOSession.sharedSession().openWithCompletionHandler({ (error) -> Void in
             guard let completion = completion else {
                 return
             }
@@ -49,7 +63,7 @@ public class KakaoLogin: Login {
                 
                 completion(userInfo, error)
             })
-        }
+            }, authParams: nil, authTypes: objAuthTypes)
     }
     
     public func logout(completion: LogoutCompletion!) {
