@@ -22,3 +22,12 @@ public protocol Login {
     func handleDidEnterBackground()
     func handleDidBecomeActive()
 }
+
+public enum LoginType: String {
+    case None = "None"
+    case Kakao = "Kakao"
+    case Naver = "Naver"
+    case Facebook = "Facebook"
+    case Instagram = "Instagram"
+    case Google = "Google"
+}

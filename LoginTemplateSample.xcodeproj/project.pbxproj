@@ -20,7 +20,6 @@
 		E94B086A1C7EC1D7003730F5 /* InstagramLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94B08611C7EC1D7003730F5 /* InstagramLogin.swift */; };
 		E94B086B1C7EC1D7003730F5 /* KakaoLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94B08621C7EC1D7003730F5 /* KakaoLogin.swift */; };
 		E94B086C1C7EC1D7003730F5 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94B08631C7EC1D7003730F5 /* Login.swift */; };
-		E94B086D1C7EC1D7003730F5 /* LoginFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94B08641C7EC1D7003730F5 /* LoginFactory.swift */; };
 		E94B086E1C7EC1D7003730F5 /* NaverLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94B08651C7EC1D7003730F5 /* NaverLogin.swift */; };
 		E94B086F1C7EC1D7003730F5 /* NoLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94B08661C7EC1D7003730F5 /* NoLogin.swift */; };
 		E94B08701C7EC1D7003730F5 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94B08671C7EC1D7003730F5 /* UserInfo.swift */; };
@@ -62,7 +61,6 @@
 		E94B08611C7EC1D7003730F5 /* InstagramLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InstagramLogin.swift; path = LoginTemplate/InstagramLogin.swift; sourceTree = "<group>"; };
 		E94B08621C7EC1D7003730F5 /* KakaoLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KakaoLogin.swift; path = LoginTemplate/KakaoLogin.swift; sourceTree = "<group>"; };
 		E94B08631C7EC1D7003730F5 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Login.swift; path = LoginTemplate/Login.swift; sourceTree = "<group>"; };
-		E94B08641C7EC1D7003730F5 /* LoginFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginFactory.swift; path = LoginTemplate/LoginFactory.swift; sourceTree = "<group>"; };
 		E94B08651C7EC1D7003730F5 /* NaverLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NaverLogin.swift; path = LoginTemplate/NaverLogin.swift; sourceTree = "<group>"; };
 		E94B08661C7EC1D7003730F5 /* NoLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoLogin.swift; path = LoginTemplate/NoLogin.swift; sourceTree = "<group>"; };
 		E94B08671C7EC1D7003730F5 /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserInfo.swift; path = LoginTemplate/UserInfo.swift; sourceTree = "<group>"; };
@@ -169,7 +167,6 @@
 				E94B08611C7EC1D7003730F5 /* InstagramLogin.swift */,
 				E94B08621C7EC1D7003730F5 /* KakaoLogin.swift */,
 				E94B08631C7EC1D7003730F5 /* Login.swift */,
-				E94B08641C7EC1D7003730F5 /* LoginFactory.swift */,
 				E94B08651C7EC1D7003730F5 /* NaverLogin.swift */,
 				E94B08661C7EC1D7003730F5 /* NoLogin.swift */,
 				E94B08671C7EC1D7003730F5 /* UserInfo.swift */,
@@ -389,7 +386,6 @@
 				E94B08681C7EC1D7003730F5 /* FacebookLogin.swift in Sources */,
 				E94B08691C7EC1D7003730F5 /* GoogleLogin.swift in Sources */,
 				E94B086E1C7EC1D7003730F5 /* NaverLogin.swift in Sources */,
-				E94B086D1C7EC1D7003730F5 /* LoginFactory.swift in Sources */,
 				E94B08701C7EC1D7003730F5 /* UserInfo.swift in Sources */,
 				E94B083E1C7EC0F5003730F5 /* AppDelegate.swift in Sources */,
 			);
