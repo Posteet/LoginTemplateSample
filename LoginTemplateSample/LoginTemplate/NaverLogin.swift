@@ -118,16 +118,28 @@ public class NaverLogin: NSObject, Login, NaverThirdPartyLoginConnectionDelegate
         }
         
         var userInfo: UserInfo! = nil
+        var error: NSError! = nil
         
         do {
             let xmlDoc = try AEXMLDocument(xmlData: data)
-            if let root: AEXMLElement = xmlDoc.root["response"] {
-                userInfo = UserInfo(ID: root["id"].stringValue, name: root["name"].stringValue, email: root["email"].stringValue)
+            var code: Int! = 0
+            var message: String! = nil
+            
+            if let result: AEXMLElement = xmlDoc.root["result"] {
+                code = result["resultcode"].intValue
+                message = result["message"].stringValue
             }
-        } catch {
+            
+            if let root: AEXMLElement = xmlDoc.root["response"] where code == 0 {
+                userInfo = UserInfo(ID: root["id"].stringValue, name: root["name"].stringValue, email: root["email"].stringValue)
+            } else {
+                error = NSError(domain: "Naver Login Error", code: code, userInfo: [NSLocalizedDescriptionKey: message])
+            }
+        } catch let e as NSError {
+            error = e
         }
-        
-        completion(userInfo, userInfo == nil ? NSError(domain: "Naver Login", code: -1, userInfo: ["reason": "xml parsing error.."]) : nil)
+    
+        completion(userInfo, error)
     }
     
     func loginFailed(error: NSError!) {
