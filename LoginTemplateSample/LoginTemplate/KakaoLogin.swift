@@ -16,7 +16,7 @@ public class KakaoLogin: Login {
         self.authTypes = authTypes;
         
         NSNotificationCenter.defaultCenter().addObserver(self,
-            selector: "kakaoSessionDidChangeWithNotification:",
+            selector: #selector(KakaoLogin.kakaoSessionDidChangeWithNotification(_:)),
             name: KOSessionDidChangeNotification,
             object: nil)
     }
@@ -37,7 +37,7 @@ public class KakaoLogin: Login {
         var objAuthTypes: [AnyObject]! = nil
         
         if let authTypes = authTypes {
-            objAuthTypes = [AnyObject](arrayLiteral: authTypes.count)
+            objAuthTypes = [AnyObject]()
             
             for type in authTypes {
                 objAuthTypes.append(type.rawValue)

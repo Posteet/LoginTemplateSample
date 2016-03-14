@@ -11,7 +11,7 @@ import Foundation
 public typealias LoginCompletion = (UserInfo!, NSError!) -> Void
 public typealias LogoutCompletion = (Bool, NSError!) -> Void
 
-public protocol Login {
+public protocol Login: class {
     func name() -> String
     
     func isLogin() -> Bool
